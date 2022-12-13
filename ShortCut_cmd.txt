@@ -1,0 +1,177 @@
+# used for comment.
+python --version - Know  for install version.
+.py - extension for python program.
+python filename.py - Code for Run the program in cmd.
+PIP is a package manager for Python packages, or modules if you like.
+Note: If you have Python version 3.4 or later, PIP is included by default.
+pip install package name - install for necessary package.
+pip uninstall package name - uninstall for necessary package.
+Variables-:
+Variables are containers for storing data values.
+Creating Variables
+Python has no command for declaring a variable.
+A variable is created the moment you first assign a value to it.
+Example-
+x = 5
+y = "John"
+print(x) //5
+print(y) //john
+Variables do not need to be declared with any particular type, and can even change type after they have been set.
+Example-
+x = 4
+x = "Sally"
+print(x) //Sally
+Casting
+If you want to specify the data type of a variable, this can be done with casting.
+Example-
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+print(x)
+print(y)
+print(z)
+Get the Type
+You can get the data type of a variable with the type() function.
+Example-
+x = 5
+y = "John"
+print(type(x)) //<class 'int'>
+print(type(y)) //<class 'str'>
+Single or Double Quotes?
+String variables can be declared either by using single or double quotes:
+Example-
+x = "John"
+print(x) //John
+#double quotes are the same as single quotes:
+x = 'John'
+print(x) //John
+Case-Sensitive
+Variable names are case-sensitive.
+Example -
+This will create two variables:
+a = 4
+A = "Sally"
+print(a) //4
+print(A) //Sally
+In python string store in double quotes ("" or '').
+Example - variable a = ("name") , b = ('raj')
+
+Python Data Types - 
+Built-in Data Types
+In programming, data type is an important concept.
+Variables can store data of different types, and different types can do different things.
+Python has the following data types built-in by default, in these categories:
+Text Type:	    str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	    set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+None Type:	    NoneType
+
+Python divides the operators in the following groups:-
+#Arithmetic operators :-
+Arithmetic operators are used with numeric values to perform common mathematical operations:
+Operator  Name              Example
++	      Addition           x + y	
+-	      Subtraction	     x - y	
+*	      Multiplication	 x * y	
+/	      Division	         x / y	
+%	      Modulus	         x % y	
+**	      Exponentiation	 x ** y	
+//	      Floor division	 x // y
+#Assignment operators :-
+Assignment operators are used to assign values to variables:
+Operator	Example	 Same As	
+=	        x = 5	 x = 5	
++=	        x += 3	 x = x + 3	
+-=	        x -= 3	 x = x - 3	
+*=	        x *= 3	 x = x * 3	
+/=	        x /= 3	 x = x / 3	
+%=	        x %= 3	 x = x % 3	
+//=	        x //= 3	 x = x // 3	
+**=	        x **= 3	 x = x ** 3	
+&=	        x &= 3	 x = x & 3
+The binary of 5 is : 0 1 0 1
+The binary of 3 is : 0 0 1 1
+AND operation : (If both sides are 1/True then result is 1/True)
+0 1 0 1  #Binary of 5
+0 0 1 1  #Binary of 3
+---------------------
+0 0 0 1  #Binary of 1	
+|=	        x |= 3	 x = x | 3	
+^=	        x ^= 3	 x = x ^ 3	
+>>=	        x >>= 3	 x = x >> 3	
+<<=	        x <<= 3	 x = x << 3
+#Comparison operators :-
+Comparison operators are used to compare two values:
+Operator	Name	                    Example	
+==	        Equal	                    x == y	
+!=	        Not equal	                x != y	
+>	        Greater than	            x > y	
+<	        Less than	                x < y	
+>=	        Greater than or equal to	x >= y	
+<=	        Less than or equal to	    x <= y
+#Logical operators :-
+Logical operators are used to combine conditional statements.
+Operator	Description	                                                         Example	
+and 	  Returns True if both statements are true	                         x < 5 and  x < 10	
+or	     Returns True if one of the statements is true	                     x < 5 or x < 4	
+not	    Reverse the result, returns False if the result is true	not          (x < 5 not x < 10)
+#Identity operators :-
+Identity operators are used to compare the objects, not if they are equal,
+but if they are actually the same object, with the same memory location
+Operator	              Description	                                      Example	
+is 	            Returns True if both variables are the same object	          x is y	
+is not	        Returns True if both variables are not the same object	      x is not y
+#Membership operators :-
+Membership operators are used to test if a sequence is presented in an object:-
+Operator	Description	                                    Example
+in 	        Returns True if a sequence with the
+            specified value is present in the object	    x in y	
+not in	    Returns True if a sequence with the 
+            specified value is not present in the object	x not in y
+#Bitwise operators:-
+Bitwise operators are used to compare (binary) numbers:-
+Operator	Name	                       Description
+& 	        AND	                   Sets each bit to 1 if both bits are 1
+|	        OR	                   Sets each bit to 1 if one of two bits is 1
+^	        XOR	                   Sets each bit to 1 if only one of two bits is 1
+~	        NOT	                   Inverts all the bits
+<<	        Zero fill left shift   Shift left by pushing zeros in from the right and let the leftmost bits fall off
+>>	        Signed right shift	   Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+
+Python Conditions and If statements :-
+Python supports the usual logical conditions from mathematics:
+
+    Equals: a == b
+    Not Equals: a != b
+    Less than: a < b
+    Less than or equal to: a <= b
+    Greater than: a > b
+    Greater than or equal to: a >= b
+
+These conditions can be used in several ways, most commonly in "if statements" and loops.
+An "if statement" is written by using the if keyword.
+
+List -:
+Lists are used to store multiple items in a single variable.
+Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+Lists are created using square brackets:
+Example - List = ["apple", "banana", "cherry"]
+
+List Methods :-
+Python has a set of built-in methods that you can use on lists.
+Method	    Description
+append()	Adds an element at the end of the list
+clear()	    Removes all the elements from the list
+copy()	    Returns a copy of the list
+count()	    Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()	    Returns the index of the first element with the specified value
+insert()	Adds an element at the specified position
+pop()	    Removes the element at the specified position
+remove()	Removes the item with the specified value
+reverse()	Reverses the order of the list
+sort()	    Sorts the list
